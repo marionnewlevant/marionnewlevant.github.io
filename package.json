@@ -1,0 +1,23 @@
+{
+  "name": "marionnewlevant.github.io",
+  "version": "0.0.0",
+  "description": "marionnewlevant github pages",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marionnewlevant/marionnewlevant.github.io.git"
+  },
+  "author": "Marion Newlevant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marionnewlevant/marionnewlevant.github.io/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-sass": "~0.5.0"
+  }
+}

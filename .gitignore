@@ -1,3 +1,12 @@
-.sass-cache
+# aptana
 .project
+
+# jekyll derived
 _site
+
+# sass
+.sass-cache
+
+# grunt artifacts
+node_modules
+

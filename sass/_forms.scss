@@ -1,0 +1,49 @@
+label {
+  display: block;
+}
+
+input, textarea {
+  @extend %form-style;
+  width: 100%;
+  height: 40px; height: 2.5rem;
+}
+select {
+  @extend %form-style;
+  @extend %square-right-style;
+  width: 100%;
+}
+textarea {
+  @extend %form-style;
+  height: 8em;
+}
+.error {
+  color: red;
+  p:last-child {padding-bottom: 1em;}
+}
+button {
+  @include button(shiny, $site-color); // bourbon button
+  width: 100%;
+}
+
+// search widget with side-by-side field and button
+// html is:
+// <div class="search">
+//   <input type="text" autocorrect="off" placeholder="search"><button type="submit"><i class="icon-search"></i></button>
+// </div>
+.search {
+  width: 100%;
+  input {
+    @extend %form-style;
+    @extend %square-right-style;
+    width: 80%;
+    vertical-align: bottom;
+    height: 40px; height: 2.5rem;
+    padding: 0 1em;
+  }
+  button {
+    @extend %square-left-style;
+    width: 20%;
+    vertical-align: bottom;
+    height: 40px; height: 2.5rem;
+  }
+}

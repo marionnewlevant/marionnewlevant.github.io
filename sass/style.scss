@@ -1,0 +1,80 @@
+@import "lib/old_ie_utils";
+@import "lib/bourbon/bourbon";
+@import "lib/utils"; // my utils. Should not generate any css
+// here we start generating css...
+
+@import "fontello"; // custom icon font (search, menu, & mail in this case)
+
+@import "lib/reset";
+
+$site-color: #8F3B40;
+$serif: "Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
+$header-line-height: 1.3;
+$break1: em(800);
+
+$narrow-side-pad: 1em;
+$wide-side-pad: 2.5em;
+
+@import "layout";
+@import "header";
+@import "nav";
+@import "footer";
+@import "forms";
+@import "typography";
+
+// ========== portfolio =========== //
+.portfolioThumb {
+  li {overflow: auto;}
+  img {
+    float: left;
+    border-radius: 2px;
+    border: 2px solid $site-color;
+    margin: 1.5em 0.5em 0.5em 0.5em;
+  }
+  .active img {
+    border: 4px solid $site-color;
+    padding: 5px;
+    transform: rotate(-3deg);
+  }
+}
+
+@import "lib/responsiveslides"; // .rslides for responsive slides widget - unmodified
+.rslides {
+  margin: 1em auto 0 auto; // center our slideshow
+}
+// the slide nav numbers
+.rslides_tabs {
+  text-align: center;
+  li {
+    display: inline-block;
+  }
+  a {
+    border: 2px solid $site-color;
+    border-radius: 2px;
+    margin: 1em;
+    padding: 0.5em 1em;
+    display: block;
+  }
+  .rslides_here a { // highlight the current one
+    border: 4px solid $site-color;
+    font-weight: bold;
+    transform: rotate(-3deg);
+  }
+}
+
+// ========== testamonials =========== //
+.testament-author {
+  font-style: italic;
+}
+
+// ========== blog =========== //
+[rel="prev"], [rel="next"] {
+  display: block;
+}
+[rel="prev"] { float: left; }
+[rel="next"] { float: right; }
+
+// syntaxhighliter css mostly out of the box in js/lib/syntaxhighlighter/styles, but
+// this makes that little ? go away.
+.syntaxhighlighter .toolbar { display: none; }
+
