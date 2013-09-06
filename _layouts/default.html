@@ -6,7 +6,6 @@
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width">
 
-  <!-- Custom CSS -->
   <!--[if lte IE 8]>
     <link rel="stylesheet" href="/css/style-old-ie.css">
   <![endif]-->
@@ -14,20 +13,40 @@
     <link rel="stylesheet" href="/css/style.css">
   <!--<![endif]-->
   
-  <!-- jekyll syntax highlighting CSS -->
-  <link rel="stylesheet" href="/css/syntax.css">
-
 </head>
-<body>
+<body class="github">
   <header role="banner">
     <a href="/">
       <h1>Marion Newlevant: Web Developer</h1>
     </a>
-    <p>A software craftswoman in Portland, Oregon with a thing for clean code... (now on github)</p>
+    <p>A software craftswoman in Portland, Oregon with a thing for clean code...</p>
   </header>
-  <main class="text">
-    {{ content }}
-  </main>
+  <nav role="navigation">
+    <a href="#nav" class="nav-collapse" id="nav-collapse"><i class="icon-menu"></i> Menu</a>
+    <ul class="nav" id="nav">
+      <li class="portfolio">
+        <a href="http://marion.newlevant.com/portfolio/patternagents">portfolio</a>
+      </li>
+      <li class="testimonials">
+        <a href="http://marion.newlevant.com/testimonials">testimonials</a> 
+      </li>
+      <li class="blog">
+        <a href="http://marion.newlevant.com/blog">blog</a>
+      </li>
+      <li class="contact">
+        <a href="http://marion.newlevant.com/contact">contact</a>
+      </li>
+      <li class="github">
+        <a href="/">github</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="buttons">
+    <a href="https://github.com/marionnewlevant/marionnewlevant.github.io"><i class="icon-github-circled"></i> fork on github</a>
+    <a href="https://github.com/marionnewlevant/marionnewlevant.github.io/zipball/master"><i class="icon-download"></i> download .zip</a>
+    <a href="https://github.com/marionnewlevant/marionnewlevant.github.io/tarball/master"><i class="icon-download"></i> download .tgz</a>
+  </div>
+  {{ content }}
   <footer role="contentinfo">
     <ul>
       <li>Credit where credit is due:</li>
@@ -41,5 +60,7 @@
       <li>&copy; 2013, all rights reserved</li>
     </ul>
   </footer>
+<!-- Javascript at the bottom for fast page loading -->
+<script type="text/javascript" src="/js/nav.js"></script>
 </body>
 </html>
