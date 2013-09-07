@@ -4,15 +4,16 @@ title: Github | Marion Newlevant
 ---
 
 {%capture layout_primary%}
-  <h1>Github repositories</h1>
-  <ul>
+  <h1>Some of my github repos</h1>
+  <dl>
     {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }} {{post.repo}}</a></li>
+      <dt><a href="http://marionnewlevant.github.io/{{post.repo}}">{{ post.title }}</a></dt>
+      <dd>{{post.content}}</dd>
     {% endfor %}
-  </ul>
+  </dl>
 {% endcapture %}
 {%capture layout_secondary%}
-  <h1>Some of my github repos</h1>
-  <p>blurb, blurb</p>
+  <h1>Github repos, github pages</h1>
+  <p>Github offers github pages. This here is the github umbrella page for all of my repositories. Follow the links to the github page for an individual repo. And fork on github (or download the zip or tgz) to see the actual code.</p>
 {% endcapture %}
 {%include layout.html%}
