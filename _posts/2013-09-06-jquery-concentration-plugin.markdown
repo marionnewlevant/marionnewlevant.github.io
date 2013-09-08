@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "jQuery Concentration Plugin"
-repo: concentration.jquery
+repo: jquery.concentration
 ---
 
 jQuery plugin for the [concentration][concentration-def] memory game.

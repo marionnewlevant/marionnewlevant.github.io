@@ -4,9 +4,3 @@
 # jekyll derived
 _site
 
-# sass
-.sass-cache
-
-# grunt artifacts
-node_modules
-
